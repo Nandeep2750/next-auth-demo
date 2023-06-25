@@ -15,6 +15,10 @@ interface ErrorResponse {
 
 const authOptions: AuthOptions = {
   secret: "next.auth.secret",
+  pages: {
+    signIn: '/', // Specify the path to your sign-in page
+  },
+
   providers: [
     CredentialsProvider({
       name: "Credentials",
